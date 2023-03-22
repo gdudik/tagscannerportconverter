@@ -6,12 +6,12 @@ prompt.message = ("");
 console.log('Press CTRL+C to exit')
 prompt.start();
 
-prompt.get(['COM port number'], (err, result) => {
+prompt.get(['Send from COM port number'], (err, result) => {
   if (err) {
     console.error('Error:', err.message);
     return;
   }
-var comNum = 'COM'+result['COM port number']
+var comNum = 'COM'+result['Send from COM port number']
 
   const port = new SerialPort({path: comNum,  baudRate: 9600 });
 
