@@ -7,6 +7,8 @@ Unfortunately, com0com has crappy drivers that require Win10 machines to disable
 # Setup
 
 ## Secure Boot Disable
+
+**You will need to disable BitLocker before attempting this. Click the Start Menu and search for `Device Encryption`. You will find Bitlocker/Device Encryption settings. You're looking for "Disable Bitlocker" or "Disable Encryption". Windows will show a progress bar and say you can keep using your computer. This process can take several hours to complete.**
 Before we begin, you'll need to disable Secure Boot in the BIOS.
 For AthleticTiming Dell Machines
 
