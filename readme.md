@@ -2,21 +2,21 @@ This companion program is designed to work with USB UHF tag readers that act as 
 
 This program works with a virtual COM port software like com0com or any other software that creates two virtual serial ports and connects them with an emulated null modem connection.
 
-Unfortunately, com0com has crappy drivers that require Win10 machines to disable secure boot. But it's free!
+~~Unfortunately, com0com has crappy drivers that require Win10 machines to disable secure boot. But it's free!~~
 
 # Setup
 
-## Secure Boot Disable
+~~## Secure Boot Disable~~
 
-**You will need to disable BitLocker before attempting this. Click the Start Menu and search for `Device Encryption`. You will find Bitlocker/Device Encryption settings. You're looking for "Disable Bitlocker" or "Disable Encryption". Windows will show a progress bar and say you can keep using your computer. This process can take several hours to complete.**
-Before we begin, you'll need to disable Secure Boot in the BIOS.
-For AthleticTiming Dell Machines
+~~You will need to disable BitLocker before attempting this. Click the Start Menu and search for `Device Encryption`. You will find Bitlocker/Device Encryption settings. You're looking for "Disable Bitlocker" or "Disable Encryption". Windows will show a progress bar and say you can keep using your computer. This process can take several hours to complete.~~
+~~Before we begin, you'll need to disable Secure Boot in the BIOS.~~
+~~For AthleticTiming Dell Machines~~
 
-1. Turn the computer off
-2. Press the power button to turn the computer on. As soon as you do, start tapping the `F2` key until you see the message "Preparing to Enter Setup".
-3. From the menu that appears, click on "Secure Boot", then "Secure Boot Enable".
-4. Select the "Disabled" radio button, then click "Apply" and "Exit".
-5. The computer will then restart
+~~1. Turn the computer off~~
+~~2. Press the power button to turn the computer on. As soon as you do, start tapping the `F2` key until you see the message "Preparing to Enter Setup".~~
+~~3. From the menu that appears, click on "Secure Boot", then "Secure Boot Enable".~~
+~~4. Select the "Disabled" radio button, then click "Apply" and "Exit".~~
+~~5. The computer will then restart~~
 
 ## com0com Setup
 1. Download com0com [here](https://sourceforge.net/projects/com0com/files/latest/download)
