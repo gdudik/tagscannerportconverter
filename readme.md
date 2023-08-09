@@ -19,25 +19,28 @@ This program works with a virtual COM port software like com0com or any other so
 ~~5. The computer will then restart~~
 
 ## com0com Setup
-1. Download com0com [here](https://sourceforge.net/projects/com0com/files/latest/download)
-2. Unzip the folder and run the x64 version of the installer in the folder.
-3. Click through the install wizard, and then choose "Launch Setup".
-4. From the program that launches, you'll see "Virtual Port Pair 1" with two COM port numbers beneath it. Click on "Virtual Port Pair 1", then edit the two text boxes at the top of the screen to use two currently unused COM ports (I usually use COM98 and COM99). Ensure that the boxes read `COMXX` and `COMYY`, where XX and YY are the two COM port numbers you'll be using. 
-5. Click "Apply" at the bottom of the box and then you can close it.
+1. Download com0com [here](https://github.com/gdudik/tagscannerportconverter/raw/master/com0com.zip)
+2. Extract the zip file to `C:\`. It should make a folder called `C:\com0com`
+3. Open the Start Menu, type `cmd`, and then, under Command Prompt, select "Run As Administrator".
+4. Enter `cd C:\com0com\x64`
+5. Enter `setupc`
+6. Enter `install - -`. CNCA0 and CNCB0 should be returned.
+7. Enter `change CNCA0 PortName=COM98`. You may be prompted by Windows to allow an installation. Allow it.
+8. Enter `change CNCB0 PortName=COM99`.
 
 ## TagScanner or Race Director Setup
 
 1. Open the tag-scanning program of your choice, whether that's Race Director, Ipico Tagscanner, or whatever.
-2. Select one of the COM ports you defined in com0com. 
+2. Select COM98 as the serial port to listen to.
 3. Start the tag logging process by clicking start or equivalent in your tag scanner program. 
 
 ## Final Setup
 
 1. Download the TagScannerPortConverter program [here](https://github.com/gdudik/tagscannerportconverter/raw/master/tagscannerportconverter.zip). Ignore any dire warnings from Chrome about how it's never heard of what you're downloading etc etc.
 2. Unzip the folder to a location of your choice for safekeeping. 
-3. From inside the folder you unzip, run `tagscannerportconverter-win.exe`. 
+3. From inside the folder you unzipped, run `tagscannerportconverter-win.exe`. 
 4. Ignore any dire warnings from Windows about how it's never heard of this software, etc.
-5. When you run the program, you'll be prompted to enter a COM port number. Enter the number of the other COM port you defined in com0com.
+5. When you run the program, you'll be prompted to enter a COM port number. Enter `99`
 6. After that, you'll be prompted to enter a tag. Scan your first tag and it should appear in the Race Director or Ipico software.
 
 If you're testing and you don't have a tag scanner, here are some sample tags for you to type in:
